@@ -32,7 +32,7 @@ This project is a simple ToDo application with a Java backend built using Spring
 ### Backend Setup
 1. **Clone the Repository:**
    ```bash
-   <!-- git clone https://github.com/arifhussain1999/GrowSpace.git -->
+   git clone https://github.com/nachii123/grow_assignment.git
    
 ## Navigate to the Project Directory:
 **cd GrowSpace**
