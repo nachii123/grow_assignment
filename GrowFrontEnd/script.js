@@ -41,20 +41,20 @@ async function markAsComplete(id) {
 
     const checkbox = document.getElementById(id);
 
-    // Determine the new status based on whether the checkbox is checked
+    
     const newStatus = checkbox.checked;
 
-    // Send the new status to the backend
+  
     await fetch(`http://localhost:8888/todos/update/${id}?status=${newStatus}`, { method: 'PUT' });
 
-    // Reload the list to reflect the changes
+    // Reloading
     loadToDos();
 }
 
 
 function renderToDos(todos) {
     const list = document.getElementById('todo-list');
-    list.innerHTML = ''; // Clear previous list
+    list.innerHTML = ''; 
     todos.forEach(todo => {
       list.innerHTML+=`<tr>
     <td>${todo.description}</td>
